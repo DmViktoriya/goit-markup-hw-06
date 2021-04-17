@@ -773,6 +773,7 @@ p {
 }
 .form-field {
   display: flex;
+  position: relative;
   flex-direction: column;
   margin-bottom: 10px;
 }
@@ -795,6 +796,19 @@ p {
 .form-comment:hover,
 .form-comment:focus {
   border: 1px solid #2196f3;
+}
+.form-input:hover ~ .modal-icon,
+.form-input:focus ~ .modal-icon {
+  fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-icon {
+  position: absolute;
+  top: 29px;
+  left: 12px;
+  /*transform: translateY(-50%);*/
+  width: 18px;
+  height: 18px;
 }
 .form-comment {
   width: 448px;
