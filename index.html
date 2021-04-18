@@ -431,13 +431,18 @@
                     <label for="comment" class="form-label">Комментарий</label>
                     <textarea class="form-comment" name="comment" id="comment" rows="4" placeholder="Введите текст"></textarea>
                 </div>
-                <div class="form-field">
-                    <input type="checkbox" name="policy" id="policy">
-                    <label for="policy" class="form-policy">
+                <label for="policy" class="form-policy">
+                    <input type="checkbox" class="checkbox" name="policy" id="policy">
+                    <svg class="icon-check-off">
+                        <use href="./images/sprite.svg#icon-check-off"></use>
+                    </svg>
+                    <svg class="icon-check-on">
+                        <use href="./images/sprite.svg#icon-check-on"></use>
+                    </svg>
                         Соглашаюсь с рассылкой и принимаю
                         <a href="" class="form-link">Условия договора</a>
-                    </label>
-                </div>
+
+               </label>
                 <button type="submit" class="btn-submit button">Отправить</button>
             </form>
         </div>
