@@ -672,7 +672,11 @@ p {
 }
 .footer > .container {
   display: flex;
+  flex-basis: calc((50%-45px) / 2);
   justify-content: space-between;
+}
+.footer-box {
+  display: flex;
 }
 .footer-social-icons {
   margin-top: 12px;
@@ -680,8 +684,8 @@ p {
 }
 .footer-subscribe {
   margin-top: 12px;
-  margin-left: 93px;
-  flex-basis: calc((50%-45px) / 2);
+  /*margin-left: 93px;
+  flex-basis: calc((50%-45px) / 2);*/
 }
 .ft-mail {
   width: 358px;
